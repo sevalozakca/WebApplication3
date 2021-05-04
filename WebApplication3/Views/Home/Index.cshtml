@@ -1,0 +1,80 @@
+﻿
+<link href="~/lib/bootstrap/dist/css/bootstrap-grid.css" rel="stylesheet" />
+<link href="~/lib/bootstrap/dist/css/bootstrap-reboot.css" rel="stylesheet" />
+<link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+
+
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<link href="~/bootstrap/css/girisstyle.css" rel="stylesheet" />
+
+
+<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">GittiGidiyor</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+            <a class="nav-link" asp-action="Login" asp-controller="Members">Giriş Yap</a>
+            <a class="nav-link" href="#">Sepetim</a>
+            <a class="nav-link" id="navclass" asp-action="Create" asp-controller="Members">Üye Ol</a>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Ürün Ara" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Ara</button>
+            </form>
+        </div>
+    </div>
+
+</nav>
+
+<div class="bg-light p-5 rounded-lg">
+    <h1 class="display-4">Evde kal, ihtiyaçlarını avantajlı fiyatlarla kolayca al!</h1>
+    <p class="lead">Hemen hemen her kategoride ürün arayın, sepetinize ekleyin ve bir tıkla kapınıza gelsin! <a href="/build/Hakkimizda.html" id="aref">Daha fazla bilgi edinin.</a></p>
+    <a class="btn btn-primary btn-lg" role="button" asp-action="Create" asp-controller="Members">Üye Ol</a>
+</div>
+<br />
+
+<div class="container">
+    <div class="col-lg-4">GittiGidiyor'da İndirimli Ürünler</div><br />
+    <div class="row justify-content-md-center">
+        <div class="card-group">
+            <div class="col-lg-4">
+                <div class="card">
+                    <img src="https://mcdn01.gittigidiyor.net/67301/tn30/673017705_tn30_1.jpg?162014" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text"> 240GB Oyuncu Bilgisayarı</p>
+                        <p class="card-text"> 5.599,00 TL</p>
+                        <a href="#" class="btn btn-primary">Sepete Ekle</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card">
+                    <img src="https://mcdn01.gittigidiyor.net/68914/tn30/689147665_tn30_2.jpg?162014" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">HP 15-da2020nt</p>
+                        <p class="card-text"> 3.599,00 TL</p>
+                        <a href="#" class="btn btn-primary">Sepete Ekle</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card">
+                    <img src="https://mcdn01.gittigidiyor.net/65030/tn30/650304407_tn30_1.jpg?162014" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">FHD Oyun Bilgisayarı</p>
+                        <p class="card-text"> 8.599,00 TL</p>
+                        <a href="#" class="btn btn-primary">Sepete Ekle</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br />
+
+

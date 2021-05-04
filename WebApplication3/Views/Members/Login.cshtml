@@ -1,0 +1,26 @@
+﻿@model Member
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<link href="~/myCss/uyeliksayfası.css" rel="stylesheet" />
+
+
+
+
+
+<form asp-action="Login" asp-controller="Members" method="post">
+    <div class="body-background">
+        <div class="container-fluid d-flex justify-content-center align-items-center h-100">
+
+            <div class="card p-3 text-center py-4">
+                <h4>E-Mail'iniz ile giriş yapın</h4>
+                <div> Lütfen giriş yapmak için e-mail adresinizi girin </div>
+                <div class="mt-3 px-3"> <input class="form-control" asp-for="@Model.EMail" placeholder="E-Mailiniz"> </div>
+                <div class="mt-3 d-grid px-3">    <input asp-action="Log" asp-controller="Members" type="submit" value="Giriş Yap" class="btn btn-primary" /></div>
+
+            </div>
+        </div>
+    </div>
+</form>

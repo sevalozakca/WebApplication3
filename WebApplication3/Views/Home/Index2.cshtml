@@ -1,0 +1,43 @@
+﻿@model Member
+@{
+    ViewData["Title"] = "Index2";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<link href="~/lib/bootstrap/dist/css/bootstrap-grid.css" rel="stylesheet" />
+<link href="~/lib/bootstrap/dist/css/bootstrap-reboot.css" rel="stylesheet" />
+<link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+
+
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<link href="~/bootstrap/css/girisstyle.css" rel="stylesheet" />
+
+
+<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">GittiGidiyor</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+            <a class="nav-link" asp-action="Index" asp-controller="Home">Çıkış Yap</a>
+            <a class="nav-link" href="#">Sepetim</a>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Ürün Ara" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Ürün Ara</button>
+            </form>
+        </div>
+    </div>
+
+</nav>
+
+<div class="bg-light p-5 rounded-lg">
+    <h1 class="display-4">Evde kal, ihtiyaçlarını avantajlı fiyatlarla kolayca al!</h1>
+    <p class="lead">Hemen hemen her kategoride ürün arayın, sepetinize ekleyin ve bir tıkla kapınıza gelsin! <a href="/build/Hakkimizda.html" id="aref">Daha fazla bilgi edinin.</a></p>
+</div>
+<br />
+
+
